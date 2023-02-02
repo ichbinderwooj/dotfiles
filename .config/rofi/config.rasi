@@ -1,0 +1,7 @@
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+configuration {
+  modes: "drun,run,rofi-power-menu:rofi-power-menu --no-symbols";
+  show-icons: true;
+  font: "Liberation Font 15";
+}
