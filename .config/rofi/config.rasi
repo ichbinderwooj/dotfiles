@@ -3,5 +3,5 @@
 configuration {
   modes: "drun,run,rofi-power-menu:rofi-power-menu --no-symbols";
   show-icons: true;
-  font: "Liberation Font 15";
+  font: "Liberation Mono 15";
 }

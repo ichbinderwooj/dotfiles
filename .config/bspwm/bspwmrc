@@ -14,22 +14,7 @@ bspc config split_ratio           0.5
 bspc config borderless_monocle    true
 bspc config gapless_monocle       true
 
-# Workspace assignment
-bspc rule -a kitty desktop='^1'
-bspc rule -a firefox desktop='^2'
-bspc rule -a neovide desktop='^3'
-bspc rule -a MuseScore4 desktop='^4'
-bspc rule -a libreoffice-startcenter desktop='^5'
-bspc rule -a libreoffice-writer desktop='^5'
-bspc rule -a libreoffice-calc desktop='^5'
-bspc rule -a libreoffice-impress desktop='^5'
-bspc rule -a libreoffice-draw desktop='^5'
-bspc rule -a libreoffice-math desktop='^5'
-bspc rule -a libreoffice-base desktop='^5'
-
-bspc rule -a discord desktop='^7'
-
-bspc rule -a Virt-manager desktop='^9'
+bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
 
 # Startup scripts
 $HOME/.config/polybar/launch.sh &
