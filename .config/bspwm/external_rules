@@ -5,32 +5,48 @@ class=$2
 instance=$3
 consequences=$4
 
-case "$class" in
-  kitty)
-    echo "desktop=^1"
-    ;;
-  firefox)
-    echo "desktop=^2"
-    ;;
-  Gimp*)
-    echo "desktop=^3 state=floating follow=on"
-    ;;
-  MuseScore4)
-    echo "desktop=^4"
-    ;;
-  libreoffice*)
-    echo "desktop=^5"
-    ;;
-  mpv)
-    echo "desktop=^6"
-    ;;
-  discord)
-    echo "desktop=^7"
-    ;;
-  Steam)
-    echo "desktop=^8 state=floating"
-    ;;
-  Virt-manager)
-    echo "desktop=^9"
-    ;;
-esac
+main() {
+
+  case "$class" in
+    kitty)
+      echo "desktop=^1"
+      ;;
+    firefox)
+      echo "desktop=^2"
+      ;;
+    Gimp*)
+      echo "desktop=^3 state=floating follow=on"
+      ;;
+    MuseScore4)
+      echo "desktop=^4"
+      ;;
+    libreoffice*)
+      echo "desktop=^5"
+      ;;
+    mpv)
+      echo "desktop=^6"
+      ;;
+    Spotify)
+      echo "desktop=^6"
+      ;;
+    discord)
+      echo "desktop=^7"
+      ;;
+    Steam)
+      echo "desktop=^8 state=floating"
+      ;;
+    Virt-manager)
+      echo "desktop=^9"
+      ;;
+    "")
+      sleep 0.5
+      wm_class=($(xprop -id $wid | grep "WM_CLASS" | grep -Po '"\K[^,"]+'))
+      class=${wm_class[-1]}
+      [[ ${#wm_class[@]} == "2" ]] && instance=${wm_class[0]}
+      [[ -n "$class" ]] && main
+      ;;
+  esac
+
+}
+
+main
