@@ -24,7 +24,7 @@ main() {
       echo "desktop=^5"
       ;;
     mpv)
-      echo "desktop=^6"
+      echo "desktop=^6 state=pseudo_tiled"
       ;;
     Spotify)
       echo "desktop=^6"
