@@ -56,6 +56,9 @@ main() {
     Gnome-disks)
       echo "state=floating"
       ;;
+    Zathura)
+      echo "state=tiled"
+      ;;
     "")
       sleep 0.5
       wm_class=($(xprop -id $wid | grep "WM_CLASS" | grep -Po '"\K[^,"]+'))
