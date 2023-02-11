@@ -14,6 +14,9 @@ main() {
     firefox)
       echo "desktop=^2"
       ;;
+    thunderbird)
+      echo "desktop=^2"
+      ;;
     Gimp*)
       echo "desktop=^3 state=floating follow=on"
       ;;
@@ -35,8 +38,23 @@ main() {
     Steam)
       echo "desktop=^8 state=floating"
       ;;
+    minecraft-launcher)
+      echo "desktop=^8 state=floating"
+      ;;
+    "Minecraft Launcher")
+      echo "desktop=^8 state=floating"
+      ;;
+    Minecraft*)
+      echo "desktop=^8"
+      ;;
     Virt-manager)
       echo "desktop=^9"
+      ;;
+    Thunar)
+      echo "state=floating"
+      ;;
+    Gnome-disks)
+      echo "state=floating"
       ;;
     "")
       sleep 0.5
