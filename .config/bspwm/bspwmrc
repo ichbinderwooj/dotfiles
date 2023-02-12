@@ -22,3 +22,4 @@ feh --bg-fill /usr/share/backgrounds/background.png &
 picom &
 lxpolkit &
 dunst &
+emacs --daemon

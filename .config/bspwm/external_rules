@@ -11,6 +11,9 @@ main() {
     kitty)
       echo "desktop=^1"
       ;;
+    Emacs)
+      echo "desktop=^1 state=tiled"
+      ;;
     firefox)
       echo "desktop=^2"
       ;;
