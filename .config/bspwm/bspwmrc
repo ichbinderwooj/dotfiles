@@ -17,7 +17,6 @@ bspc config gapless_monocle       true
 bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
 
 # Startup scripts
-xrandr -s 1920x1080 &
 $HOME/.config/polybar/launch.sh &
 feh --bg-fill /usr/share/backgrounds/background.png &
 picom &
