@@ -130,3 +130,10 @@ super + {Left,Down,Up,Right}
 # Screenshots
 {_,super,shift} + Print
 	maim {_,--window $(xdotool getactivewindow),--select} "/home/$USER/Pictures/Screenshots/Screenshot from $(date +%Y-%m-%d\ %H-%M-%S).png"
+
+# Applications
+super + shift + f
+	thunar
+
+super + shift + b
+	firefox
