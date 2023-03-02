@@ -41,6 +41,9 @@ main() {
     discord)
       echo "desktop=^7"
       ;;
+    kakaotalk.exe)
+      echo "desktop=^7 state=floating"
+      ;;
     Steam)
       echo "desktop=^8 state=floating"
       ;;
@@ -60,6 +63,9 @@ main() {
       echo "state=floating"
       ;;
     Gnome-disks)
+      echo "state=floating"
+      ;;
+    Blueberry.py)
       echo "state=floating"
       ;;
     Zathura)
