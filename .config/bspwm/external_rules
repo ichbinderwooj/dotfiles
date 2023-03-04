@@ -41,9 +41,6 @@ main() {
     discord)
       echo "desktop=^7"
       ;;
-    kakaotalk.exe)
-      echo "desktop=^7 state=floating"
-      ;;
     Steam)
       echo "desktop=^8 state=floating"
       ;;
