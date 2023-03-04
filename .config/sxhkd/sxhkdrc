@@ -133,7 +133,7 @@ super + {Left,Down,Up,Right}
 
 # Applications
 super + shift + f
-	thunar
+	nemo
 
 super + shift + b
 	firefox

@@ -59,7 +59,7 @@ main() {
     Virt-manager)
       echo "desktop=^9"
       ;;
-    Thunar)
+    Nemo)
       echo "state=floating"
       ;;
     Gnome-disks)
