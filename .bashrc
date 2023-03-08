@@ -18,6 +18,7 @@ alias cfg-git="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 # Scripts
 colorscript random
+eval "$(thefuck --alias)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
