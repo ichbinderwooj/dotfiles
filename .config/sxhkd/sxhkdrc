@@ -10,6 +10,10 @@ super + Return
 super + @space
 	rofi -show drun
 
+# dmenu (symlinked rofi)
+super + d
+  dmenu_run
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -133,7 +137,7 @@ super + {Left,Down,Up,Right}
 
 # Applications
 super + shift + f
-	nemo
+	xdg-open .
 
 super + shift + b
-	firefox
+	xdg-open 'https://'
