@@ -18,8 +18,5 @@ bspc config external_rules_command "$HOME/.config/bspwm/external_rules"
 
 # Startup scripts
 $HOME/.config/polybar/launch.sh &
-feh --bg-fill /usr/share/backgrounds/background.png &
 picom &
-lxpolkit &
 dunst &
-emacs --daemon &
