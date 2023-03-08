@@ -53,6 +53,9 @@ main() {
     Minecraft*)
       echo "desktop=^8"
       ;;
+    supertuxkart)
+      echo "desktop=^8 state=tiled"
+      ;;
     Virt-manager)
       echo "desktop=^9"
       ;;
