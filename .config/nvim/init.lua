@@ -1,8 +1,13 @@
+-- Clipboard
 vim.o.clipboard = 'unnamedplus'
 
+-- Tab width
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
+
+-- Line numbers
+vim.o.number = true
 
 require('packer').startup(function(use)
   -- Packer
