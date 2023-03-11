@@ -1,2 +1,0 @@
-lxpolkit &
-nitrogen --restore &

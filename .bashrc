@@ -18,7 +18,6 @@ export EDITOR="nvim"
 alias cfg-git="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 # Scripts
-colorscript random
 eval "$(thefuck --alias)"
 
 # nvm

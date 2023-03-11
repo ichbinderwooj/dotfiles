@@ -1,8 +1,8 @@
-@theme "/home/wooj/.local/share/rofi/themes/nord.rasi"
-
 configuration {
-  modes: "drun,run,rofi-power-menu:rofi-power-menu --no-symbols";
+  modi: "drun,run,rofi-power-menu:rofi-power-menu --no-symbols";
   show-icons: true;
   icon-theme: "Papirus-Dark-nordic-folders";
   font: "Liberation Mono 15";
 }
+
+@theme "/home/wooj/.local/share/rofi/themes/nord.rasi"
