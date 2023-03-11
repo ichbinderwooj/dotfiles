@@ -17,9 +17,6 @@ export EDITOR="nvim"
 
 alias cfg-git="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
-# Scripts
-eval "$(thefuck --alias)"
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -27,3 +24,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # rust
 . "$HOME/.cargo/env"
+
+# Scripts
+eval "$(thefuck --alias)"
+pfetch
