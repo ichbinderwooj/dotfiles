@@ -29,7 +29,7 @@ main() {
     MuseScore4)
       echo "desktop=^4"
       ;;
-    libreoffice*)
+    Soffice|libreoffice*)
       echo "desktop=^5"
       ;;
     mpv)

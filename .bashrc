@@ -27,4 +27,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # Scripts
 eval "$(thefuck --alias)"
-pfetch
+colorscript -r
